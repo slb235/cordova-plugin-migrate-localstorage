@@ -1,6 +1,6 @@
 {
   "name": "@ifiske/cordova-plugin-migrate-localstorage",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "cordova": {
     "id": "cordova-plugin-migrate-localstorage",
     "platforms": [
