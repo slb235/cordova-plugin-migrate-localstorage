@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-xmlns:android="http://schemas.android.com/apk/res/android"
-           id="cordova-plugin-migrate-localstorage"
-      version="1.0.0">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-migrate-localstorage" version="2.0.0">
     <name>Migrate WebView Data</name>
-    <description>Migrate LocalStorage data from UIWebView to WKWebView</description>
+    <description>Migrate LocalStorage data from UIWebView to WKWebView and from file-urls to localhost:8080 on iOS/Android</description>
     <license>Apache 2.0</license>
     <keywords>ecosystem:cordova,cordova,cordova-ios,uiwebview,wkwebview,localstorage</keywords>
-    <repo>https://github.com/maklesoft/cordova-plugin-migrate-localstorage.git</repo>
-    <issue>https://github.com/maklesoft/cordova-plugin-migrate-localstorage/issues/</issue>
+    <repo>https://github.com/ifiske/cordova-plugin-migrate-localstorage.git</repo>
+    <issue>https://github.com/ifiske/cordova-plugin-migrate-localstorage/issues/</issue>
 
-    <dependency id="cordova-plugin-ionic-webview" version="^1.1.16" />
+    <dependency id="cordova-plugin-ionic-webview" version="^2.0.0" />
 
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="MigrateLocalStorage">
+                <param name="android-package" value="se.iFiske.plugins.MigrateLocalStorage" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/MigrateLocalStorage.java" target-dir="src/se/iFiske/plugins/" />
+    </platform>
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="MigrateLocalStorage">

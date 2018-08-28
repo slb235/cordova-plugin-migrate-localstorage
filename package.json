@@ -1,15 +1,15 @@
 {
   "name": "@ifiske/cordova-plugin-migrate-localstorage",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "cordova": {
     "id": "cordova-plugin-migrate-localstorage",
     "platforms": [
       "ios"
     ]
   },
-  "description": "Migrate LocalStorage data from UIWebView to WKWebView",
-  "repository": "https://github.com/maklesoft/cordova-plugin-migrate-localstorage.git",
-  "issue": "https://github.com/maklesoft/cordova-plugin-migrate-localstorage/issues/",
+  "description": "Migrate LocalStorage data from UIWebView to WKWebView, or from file url to http url in android",
+  "repository": "https://github.com/ifiske/cordova-plugin-migrate-localstorage.git",
+  "issue": "https://github.com/ifiske/cordova-plugin-migrate-localstorage/issues/",
   "keywords": [
     "ecosystem:cordova",
     "cordova",
