@@ -75,7 +75,7 @@ public class MigrateLocalStorage extends CordovaPlugin {
     MigrateLocalStorage.runWebViewJS(context, oldUrl, oldJS, new ValueCallback<String>() {
       @Override
       public void onReceiveValue(String s) {
-        if (s.equals("empty")) {
+        if (s.equals("\"empty\"")) {
           Log.d("MigrateLocalStorage", "LocalStorage was empty, not migrating");
           return;
         }
@@ -92,7 +92,7 @@ public class MigrateLocalStorage extends CordovaPlugin {
         MigrateLocalStorage.runWebViewJS(context, newUrl, newJS, new ValueCallback<String>() {
           @Override
           public void onReceiveValue(String s) {
-            if (s.equals("Completed")) {
+            if (s.equals("\"Completed\"")) {
               MigrateLocalStorage.runWebViewJS(context, oldUrl, clearOldJS, new ValueCallback<String>() {
                 @Override
                 public void onReceiveValue(String s) {
