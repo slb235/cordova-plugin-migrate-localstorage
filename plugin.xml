@@ -9,7 +9,7 @@
     <repo>https://github.com/ifiske/cordova-plugin-migrate-localstorage.git</repo>
     <issue>https://github.com/ifiske/cordova-plugin-migrate-localstorage/issues/</issue>
 
-    <dependency id="cordova-plugin-ionic-webview" version="^2.0.0" />
+    <dependency id="cordova-plugin-ionic-webview" version=">=4.0.0" />
 
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
