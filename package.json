@@ -8,8 +8,8 @@
     ]
   },
   "description": "Migrate LocalStorage data from UIWebView to WKWebView, or from file url to http url in android",
-  "repository": "https://github.com/ifiske/cordova-plugin-migrate-localstorage.git",
-  "issue": "https://github.com/ifiske/cordova-plugin-migrate-localstorage/issues/",
+  "repository": "https://github.com/yjseo29/cordova-plugin-migrate-localstorage.git",
+  "issue": "https://github.com/yjseo29/cordova-plugin-migrate-localstorage/issues/",
   "keywords": [
     "ecosystem:cordova",
     "cordova",
