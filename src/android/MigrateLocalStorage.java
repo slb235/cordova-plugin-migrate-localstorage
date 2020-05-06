@@ -71,7 +71,7 @@ public class MigrateLocalStorage extends CordovaPlugin {
 
     final String oldUrl = "file:///android_asset/www/index.html";
 
-    final String newUrl = preferences.getString("Scheme", "http") + "://" + preferences.getString("Hostname", "localhost");
+    final String newUrl = "http://localhost";
     Log.d("MigrateLocalStorage", "New webview Url: "+newUrl);
     MigrateLocalStorage.runWebViewJS(context, oldUrl, oldJS, new ValueCallback<String>() {
       @Override
